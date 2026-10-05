@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Magic Books | Leo y la Linterna Dorada</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Georgia, "Times New Roman", serif;
+            background: #071426;
+            color: #f8f1df;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        header {
+            padding: 28px 0;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #f5c96a;
+        }
+
+        .tagline {
+            margin-top: 8px;
+            color: #d8d1bd;
+            font-size: 15px;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 60px;
+            padding: 55px 0 80px;
+            flex-wrap: wrap;
+        }
+
+        .book-cover {
+            width: 320px;
+            height: 450px;
+            border-radius: 10px;
+            border: 2px solid #b99042;
+            background:
+                radial-gradient(circle at 50% 35%, #e5bd62 0%, #7d5b24 12%, #172b49 45%, #071426 75%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.45);
+        }
+
+        .cover-placeholder {
+            padding: 30px;
+            color: #f8e8b7;
+        }
+
+        .cover-placeholder .small {
+            font-size: 14px;
+            letter-spacing: 3px;
+            margin-bottom: 25px;
+        }
+
+        .cover-placeholder h2 {
+            font-size: 29px;
+            line-height: 1.25;
+        }
+
+        .cover-placeholder .magic {
+            margin-top: 25px;
+            font-size: 45px;
+        }
+
+        .info {
+            max-width: 500px;
+        }
+
+        .info h1 {
+            font-size: 44px;
+            line-height: 1.15;
+            color: #f5c96a;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            font-size: 18px;
+            line-height: 1.7;
+            color: #ded8c9;
+            margin-bottom: 25px;
+        }
+
+        .price {
+            font-size: 30px;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 22px;
+        }
+
+        .buy-button {
+            display: inline-block;
+            background: #d9a93e;
+            color: #071426;
+            padding: 16px 35px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            transition: 0.2s;
+        }
+
+        .buy-button:hover {
+            transform: translateY(-2px);
+            background: #f0c65e;
+        }
+
+        .note {
+            margin-top: 15px;
+            font-size: 13px;
+            color: #aaa898;
+        }
+
+        footer {
+            border-top: 1px solid rgba(255,255,255,0.12);
+            padding: 25px 0;
+            text-align: center;
+            color: #8f928f;
+            font-size: 13px;
+        }
+
+        @media (max-width: 700px) {
+            .hero {
+                padding-top: 30px;
+                gap: 35px;
+            }
+
+            .book-cover {
+                width: 260px;
+                height: 365px;
+            }
+
+            .info {
+                text-align: center;
+            }
+
+            .info h1 {
+                font-size: 35px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">MAGIC BOOKS</div>
+            <div class="tagline">Historias mágicas para pequeños soñadores</div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="hero">
+
+            <div class="book-cover">
+                <div class="cover-placeholder">
+                    <div class="small">MAGIC BOOKS</div>
+
+                    <h2>
+                        Leo y la<br>
+                        Linterna Dorada
+                    </h2>
+
+                    <div class="magic">✨</div>
+
+                    <div class="small">
+                        PRÓXIMAMENTE PORTADA
+                    </div>
+                </div>
+            </div>
+
+            <div class="info">
+
+                <h1>Leo y la Linterna Dorada</h1>
+
+                <p class="description">
+                    Una encantadora aventura llena de imaginación,
+                    luz y magia. Acompaña a Leo mientras descubre
+                    que una pequeña linterna puede transformar
+                    una noche cualquiera en algo extraordinario.
+                </p>
+
+                <div class="price">$3.99 USD</div>
+
+                <!-- AQUÍ COLOCAREMOS EL BOTÓN DE PAYMOS -->
+
+                <button class="buy-button" type="button">
+                    Comprar ahora
+                </button>
+
+                <div class="note">
+                    Pago seguro con criptomonedas
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        © 2026 Magic Books · Historias que cobran vida ✨
+    </footer>
+
+</body>
+</html>
