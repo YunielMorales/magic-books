@@ -211,11 +211,22 @@
 
                 <div class="price">$3.99 USD</div>
 
-                <!-- AQUÍ COLOCAREMOS EL BOTÓN DE PAYMOS -->
+               <script src="https://paymos.io/v1/paymos-widget.js?v=1.0.1"></script>
 
-                <button class="buy-button" type="button">
-                    Comprar ahora
-                </button>
+<div id="paymos-widget"></div>
+
+<script>
+    PaymosWidget.mount('#paymos-widget', {
+        "api_key": "pk_test_3pE73AtVWa8V80QPywEGkO",
+        "project_id": "prj_5Cy3669Xn69cs5tkSKCoQW",
+        "price_id": "price_44U79HaSkEmWn53rl1Tpjo",
+        "mode": "iframe",
+        "label": "Comprar ahora",
+        "accent_color": "#FF6B35",
+        "text_color": "#FFFFFF",
+        "radius": 20
+    });
+</script>
 
                 <div class="note">
                     Pago seguro con criptomonedas
